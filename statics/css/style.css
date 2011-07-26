@@ -1,0 +1,194 @@
+body {
+    font-size: 12px;
+}
+#bar {
+    display: block;
+    position: fixed;
+    background: #eee;
+    height: 34px;
+    width: 100%;
+    -webkit-box-shadow: 0px 2px 5px #000;
+}
+.divider {
+    background: #ccc;
+    width: 1px;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    margin: 0 5px;
+}
+#logo {
+    margin-top: 2px;
+    margin-left: 10px;
+    width: 125px;
+    float: left;
+    display: inline-block;
+}
+
+/* yoghrt player */
+#yoghrt_player {
+    display: inline-block;
+    width: 700px;
+    float: left;
+    height: 30px;
+    padding: 8px 0;
+}
+#yoghrt_player #artwork  {
+    display: inline-block;
+}
+#yoghrt_player #artwork img {
+    width: 16px;
+    border: 1px solid #ccc;
+    height: 16px;
+}
+#yoghrt_player #previous {
+    background: url(../images/icons/control-skip-180.png);
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+}
+#yoghrt_player #stop {
+    background: url(../images/icons/control-stop-square.png);
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+}
+#yoghrt_player #play {
+    background: url(../images/icons/control.png);
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+}
+#yoghrt_player #play.paused {
+    background: url(../images/icons/control-pause.png);
+}
+#yoghrt_player #next {
+    background: url(../images/icons/control-skip.png);
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+}
+#yoghrt_player #volume {
+    background: url(../images/icons/speaker-volume.png);
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+}
+#yoghrt_player #volume.muted {
+    background: url(../images/icons/speaker-volume-none.png);
+}
+#yoghrt_player #ticker {
+    font-size: 12px;
+    display: inline-block;
+    padding: 2px;
+    text-shadow: 0px 0px 3px #CCC;
+    vertical-align: top;
+}
+#yoghrt_player #osd {
+    font-size: 12px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 3px #CCC;
+    position: relative;
+    top: -4px;
+}
+#yoghrt_player .divider {
+    float: none;
+    position: relative;
+    clear: both;
+    display: inline-block;
+    height: 18px;
+}
+#yoghrt_player #love {
+    background: url(../images/icons/heart-empty.png);
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+}
+#yoghrt_player #love.loved {
+    background: url(../images/icons/heart.png);
+}
+#yoghrt_player #meta {
+    position: absolute;
+    height: 110px;
+    min-width: 250px;
+    display: none;
+    background: #fff;
+    top: 34px;
+    -webkit-box-shadow: 0px 2px 5px #000;
+    z-index: -1;
+    padding: 5px;
+    text-shadow: 0px 0px 2px #CCC;
+    font-size: 11px;
+}
+#yoghrt_player #meta #artwork {
+    float: left;
+}
+#yoghrt_player #meta #artwork img {
+    width: 100px;
+    height: 100px;
+    padding: 1px;
+    border: 1px solid #CCC;
+    margin: 3px;
+    background: white;
+    -webkit-box-shadow: 0px 2px 2px #999;
+}
+#yoghrt_player #meta #info > div {
+    display: block;
+    margin-bottom: 2px;
+}
+#yoghrt_player #meta #info {
+    float: left;
+    height: 90px;
+    margin-left: 5px;
+}
+#yoghrt_player #meta #info #title {
+    text-transform: uppercase;
+}
+#yoghrt_player #meta #info #genre span {
+    background: #d5edf8;
+    padding: 2px 4px;
+}
+#yoghrt_player #meta .icon {
+    text-align: left;
+    vertical-align: middle;
+    float: left;
+    margin-right: 2px;
+}
+
+
+/* stage */
+#yoghrt_stage {
+    position: fixed;
+    z-index: -11;
+}
+
+/* playlist */
+
+#playlist {
+    background: #000;
+    opacity: .5;
+    
+    position: fixed;
+    left: 0;
+    width: 200px;
+    height: 100%;
+}
+#playlist #border {
+    float: right;
+    width: 5px;
+    height: 100%;
+    background: #ee9;
+}
+
+#footer {
+    background: #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+#footer #soundcloud_logo {
+    margin: 1px;
+}

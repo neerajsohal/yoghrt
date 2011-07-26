@@ -1,0 +1,23 @@
+radius = 50.0;
+
+void setup() {
+    size(ys.X, ys.Y);
+    background(#000000);
+    strokeWeight( 10 );
+}
+
+void draw() {
+    radius = 50 + sin( frameCount * (ys.getPeakDataLeft() * ys.getPeakDataRight())) ^ 2 ;
+    // Fill canvas grey
+    background(#111111);
+
+    // Set fill-color to blue
+    fill( #9955FF );
+
+    // Set stroke-color white
+    stroke(255);
+
+    // Draw circle
+    ellipse( ys.X/2, ys.Y/2, radius, radius );
+}
+
